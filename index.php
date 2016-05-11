@@ -69,26 +69,23 @@ else if(isset($robot) || isset($robot_name) || isset($player_name)){
 
 
                         <div class="item item-body item-robot">
-                            <div class="row">
-                                <div class="col-100 part-robot"><!-- head -->
-                                    <a class="sprite" ng-class="partClasses(robot.parts['head'])"  style="{{partStyles(robot.parts['head'])}}"></a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-100 part-robot">
-                                    <!-- body -->
-                                    <div ng-class="robot.parts['arms'].collected? 'body-container' : ''">
+
+
+                            <div class="row leg-row">
+                                <div class="col-100 part-robot upper-col">
+                                    <a class="sprite left" ng-class="partClasses(robot.parts['arms'])"  style="{{partStyles(robot.parts['arms'])}}"></a>
+                                    <div class="robot-arms">
+                                        <a class="sprite" ng-class="partClasses(robot.parts['head'])"  style="{{partStyles(robot.parts['head'])}}"></a>
                                         <a class="sprite" ng-class="partClasses(robot.parts['body'])"  style="{{partStyles(robot.parts['body'])}}"></a>
                                     </div>
-                                    <!-- arms -->
-                                    <a class="sprite" ng-class="partClasses(robot.parts['arms'])"  style="{{partStyles(robot.parts['arms'])}}"></a>
+                                    <a class="sprite right" ng-class="partClasses(robot.parts['arms'])"  style="{{partStyles(robot.parts['arms'])}}"></a>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-100 part-robot"><!-- legs -->
+                                <div class="col-100 part-robot">
                                     <a class="sprite" ng-class="partClasses(robot.parts['legs'])"  style="{{partStyles(robot.parts['legs'])}}"></a>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
 

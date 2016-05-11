@@ -75,17 +75,17 @@ body{
 }
 
 .no-padding{
-	padding:0px;
+  padding:0px;
 }
 .no-margin{
-	margin:0px;
+  margin:0px;
 }
 .tube-grid{
-	padding:10px 2px 0px 2px;
+  padding:10px 2px 0px 2px;
 }
 
 .rot0{
-	-ms-transform: rotate(0); /* IE 9 */
+  -ms-transform: rotate(0); /* IE 9 */
     -ms-transform-origin: 50% 50%; /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
     -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
@@ -130,7 +130,7 @@ body{
 }
 
 .text-center{
-	text-align: center;
+  text-align: center;
 }
 
 .giant-text{
@@ -163,8 +163,8 @@ h4.giant-text {
 /*Periodic start*/
 
 img{
-	display: block;
-	margin:auto;
+  display: block;
+  margin:auto;
 }
 
 .flexyWrap{
@@ -178,12 +178,12 @@ img{
 }
 
 .picture{
-	height: 100%;
-	width: auto;
+  height: 100%;
+  width: auto;
 }
 
 .picture-container{
-	height:30%;
+  height:30%;
 }
 
 .map-container {
@@ -201,8 +201,8 @@ img{
 }
 
 .btnArea{
-	height:60%;
-	margin-top:0px;
+  height:60%;
+  margin-top:0px;
 }
 
 .btncont{
@@ -455,94 +455,9 @@ select{
 }
 
 #qCard{
-	text-align: center;
+  text-align: center;
 }
 
-
-/* Parts screen - start */
-
-.item-robot {
-  min-height: 175px;
-}
-
-.item-body .row {
-  padding: 0;
-  padding-bottom: 2px;
-}
-
-.center-margin{
-  padding-left: 5px;
-  padding-right: 5px;
-    margin: auto;
-}
-
-.part-box{
-  height: 80px;
-  padding: 10px 0;
-}
-
-.over-check{
-  font-size: 2em;
-  position: absolute;
-  right: 10%;
-  bottom: 5%;
-  /*pointer-events: none;*/
-}
-
-.big-robot .sprite {
-  zoom: 3;
-}
-
-.changePart {
-  font-size: 1.3em;
-  position: absolute;
-  text-align: right;
-  padding: 29px 8%;
-  right: 0;
-  top: 0;
-  width: 22%;
-  height: 100%;
-  opacity: 0.8;
-  cursor: pointer;
-  background-color: rgba(0,0,0,0.1);
-  border-left: 1px solid rgba(0,0,0,0.16);
-}
-
-.part-list {
-  zoom: 1;
-}
-
-.customize-parts-box{
-  border-top: 3px solid rgba(0,0,0,0.1);
-}
-
-.changePart.left{
-  text-align: left;
-  left: 0;
-  border-right: 1px solid rgba(0,0,0,0.16);
-  border-left: none;
-}
-
-.part-not-collected{
-  -webkit-filter: contrast(0) brightness(1.4);
-  text-decoration: none;
-}
-
-.part-robot{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.part-robot .body-container .sprite.body{
-  left: -50%;
-  position: relative;
-}
-
-.part-robot .body-container{
-  left: 50%;
-  position: absolute;
-}
 
 .memory-button{
     transition: opacity 0.2s ease-in-out, box-shadow 0.1s ease-in-out;
@@ -623,6 +538,92 @@ select{
 }
 
 
+/* Parts screen - start */
+
+.item-robot {
+  min-height: 175px;
+}
+
+.item-body .row {
+  padding: 0;
+  padding-bottom: 2px;
+}
+
+.center-margin{
+  padding-left: 5px;
+  padding-right: 5px;
+    margin: auto;
+}
+
+.part-box{
+  height: 80px;
+  padding: 10px 0;
+}
+
+.over-check{
+  font-size: 2em;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  /*pointer-events: none;*/
+}
+
+.big-robot .sprite {
+  zoom: 0.3 !important;
+}
+
+.changePart {
+  font-size: 1.3em;
+  position: absolute;
+  text-align: right;
+  padding: 29px 8%;
+  right: 0;
+  top: 0;
+  width: 22%;
+  height: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.1);
+  border-left: 1px solid rgba(0,0,0,0.16);
+}
+
+.part-list {
+  zoom: 0.3;
+}
+
+.item-robot .part-robot {
+    display: flex;
+}
+
+.leg-row {
+  display: block !important;
+}
+
+.customize-parts-box{
+  border-top: 3px solid rgba(0,0,0,0.1);
+}
+
+.changePart.left{
+  text-align: left;
+  left: 0;
+  border-right: 1px solid rgba(0,0,0,0.16);
+  border-left: none;
+}
+
+.part-not-collected{
+  -webkit-filter: contrast(0) brightness(1.4);
+  text-decoration: none;
+}
+
+.part-robot{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.part-robot .sprite{
+  zoom: 0.1;
+}
 
 .part-robot .part-not-collected {
   display: none;
@@ -634,89 +635,158 @@ select{
   margin-left: auto;
 }
 
+.sprite.arms.right {
+  margin-left: -120px;
+}
+
+.sprite.arms.left {
+  margin-right: -10px;
+}
+
+.sprite.arms.arms2.left {
+  transform: rotate(-30deg);
+}
+
+.sprite.arms.arms3.left {
+   transform: rotate(-18deg);
+} 
+
+.item-robot .sprite.arms{
+      margin-top: 417px;
+}
+
+.item-robot .sprite.legs{
+  margin-top: -40px;
+}
+
+.item-robot .sprite.arms.left{
+  margin-top: 580px;
+  margin-right: -40px;
+}
+
+.upper-col {
+  margin-left: -6px;
+}
+
 .sprite.head.head1 {
-  background: url('../img/robots.png') no-repeat -316px -30px;
-  width: 52px;
-  height: 38px;
+  background: url('../img/robots.png') no-repeat -309px -1px;
+  width: 565px;
+  height: 325px;
 }
 
 .sprite.head.head2 {
-  background: url('../img/robots.png') no-repeat -376px -22px;
-  width: 52px;
-  height: 46px;
+  background: url('../img/robots.png') no-repeat -1941px 0;
+  width: 442px;
+  height: 326px;
 }
 
 .sprite.head.head3 {
-  background: url('../img/robots.png') no-repeat -439px -14px;
-  width: 40px;
-  height: 54px;
+  background: url('../img/robots.png') no-repeat -2940px -17px;
+  width: 377px;
+  height: 326px;
 }
 
+.sprite.head.head4 {
+  background: url('../img/robots.png') no-repeat -4207px -11px;
+  width: 458px;
+  height: 326px;
+  margin-bottom: 30px;
+}
 
 .sprite.body.body1 {
-  background: url('../img/robots.png') no-repeat -513px -42px;
-  width: 55px;
-  height: 25px;
+  background: url('../img/robots.png') no-repeat -289px -339px;
+  width: 605px;
+  height: 649px;
 }
 
 .sprite.body.body2 {
-  background: url('../img/robots.png') no-repeat -520px -126px;
-  width: 44px;
-  height: 39px;
+  background: url('../img/robots.png') no-repeat -1841px -340px;
+  width: 579px;
+  height: 648px;
 }
 
+.sprite.body.body3 {
+  background: url('../img/robots.png') no-repeat -2853px -357px;
+  width: 560px;
+  height: 648px;
+}
+
+.sprite.body.body4 {
+  background: url('../img/robots.png') no-repeat -4041px -350px;
+  width: 613px;
+  height: 652px;
+}
 
 .sprite.arms.arms1 {
-  background: url('../img/robots.png') no-repeat -312px -206px;
-  width: 80px;
-  height: 48px;
+  background: url('../img/robots.png') no-repeat -9px -1099px;
+  width: 295px;
+  height: 299px;
+}
+
+.sprite.arms.arms1.right {
+  background: url('../img/robots.png') no-repeat -921px -15px;
+  width: 343px;
+  height: 649px;
 }
 
 .sprite.arms.arms2 {
-  background: url('../img/robots.png') no-repeat -16px -206px;
-  width: 72px;
-  height: 72px;
+  background: url('../img/robots.png') no-repeat -1385px -1343px;
+  width: 327px;
+  height: 203px;
+}
+
+.sprite.arms.arms2.right {
+  background: url('../img/robots.png') no-repeat -1008px -819px;
+  width: 310px;
+  height: 617px;
 }
 
 .sprite.arms.arms3 {
-  background: url('../img/robots.png') no-repeat -403px -206px;
-  width: 80px;
-  height: 56px;
+  background: url('../img/robots.png') no-repeat -2460px -726px;
+  width: 376px;
+  height: 181px;
+}
+
+.sprite.arms.arms3.right {
+  background: url('../img/robots.png') no-repeat -1345px -677px;
+  width: 325px;
+  height: 623px;
 }
 
 .sprite.arms.arms4 {
-    background: url('../img/robots.png') no-repeat -453px -206px;
-    width: 40px;
-    height: 56px;
+  background: url('../img/robots.png') no-repeat -3573px -724px;
+  width: 340px;
+  height: 271px;
 }
-.sprite.arms.arms5 {
-    background: url('../img/robots.png') no-repeat -353px -206px;
-    width: 40px;
-    height: 56px;
+
+.sprite.arms.arms4.right {
+  background: url('../img/robots.png') no-repeat -1372px -61px;
+  width: 366px;
+  height: 591px;
 }
 
 .sprite.legs.legs1 {
-  background: url('../img/robots.png') no-repeat -327px -327px;
-  width: 52px;
-  height: 45px;
+  background: url('../img/robots.png') no-repeat -355px -993px;
+  width: 607px;
+  height: 604px;
 }
 
 .sprite.legs.legs2 {
-  background: url('../img/robots.png') no-repeat -393px -334px;
-  width: 42px;
-  height: 38px;
+  background: url('../img/robots.png') no-repeat -1808px -1005px;
+  width: 520px;
+  height: 592px;
 }
 
 .sprite.legs.legs3 {
-  background: url('../img/robots.png') no-repeat -454px -323px;
-  width: 38px;
-  height: 54px;
+  background: url('../img/robots.png') no-repeat -2678px -1065px;
+  width: 910px;
+  height: 577px;
 }
 
 .sprite.legs.legs4 {
-  background: url('../img/robots.png') no-repeat -512px -318px;
-  width: 40px;
-  height: 54px;
+  background: url('../img/robots.png') no-repeat -3801px -1016px;
+  width: 1076px;
+  height: 588px;
 }
 /*Used for alternatives in the quiz*/
 .marginTop20{
@@ -782,7 +852,11 @@ select{
 
 .minigame-name {
     font-size: 3.4vmin;
-    height: auto;
+    height: 4vh;
+}
+
+.minigame-name span {
+  vertical-align: sub;
 }
 
 .item.minigames {
